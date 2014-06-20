@@ -13,7 +13,7 @@
  *
  * @Date:   2014-06-20 03:40:47
  * @Last Modified by:   Smartik
- * @Last Modified time: 2014-06-20 03:46:44
+ * @Last Modified time: 2014-06-20 04:02:40
  *
  */
 
@@ -70,7 +70,7 @@ if ( ! class_exists('Smk_ThemeView') ) {
  * 
  * @return string The HTML from $file
  */
-if( function_exists('smk_get_template_part') ){
+if( ! function_exists('smk_get_template_part') ){
 	function smk_get_template_part($file, $args = array()){
 		$template = new Smk_ThemeView;
 		$template->render($file, $args);
