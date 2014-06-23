@@ -13,7 +13,7 @@
  *
  * @Date:   2014-06-20 03:40:47
  * @Last Modified by:   Smartik
- * @Last Modified time: 2014-06-20 04:02:40
+ * @Last Modified time: 2014-06-23 22:46:40
  *
  */
 
@@ -72,8 +72,8 @@ if ( ! class_exists('Smk_ThemeView') ) {
  */
 if( ! function_exists('smk_get_template_part') ){
 	function smk_get_template_part($file, $args = array()){
-		$template = new Smk_ThemeView;
-		$template->render($file, $args);
+		$template = new Smk_ThemeView($file, $args);
+		$template->render();
 	}
 }
  
